@@ -338,23 +338,24 @@
             </ul>
         </div>
         <div class="right-part">
-          <div class="subscribe">
                 <p class="subs-text">Subscribe</p>
                 <form class="subscription-form">
-                    <input type="text" name="email_subscribe" class="email-sub" placeholder="E-mail">
-                </form>
-            </div>
-            <button type="submit" class="button-subsc">Subscribe
+                    <label class="subs-label">
+                    <input type="email" name="email_subscribe" class="email-sub" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="button-subsc">Subscribe
                  <svg width="24" height="24" class="paper">
                     <use href="./images/icons.svg#icon-Frame-3-1"></use>
                 </svg>
             </button>
+                </form>
+        
             </div>
         </div>
     </footer>
     <div class="modal-overlay">
         <div class="modal">
-            <button type="submit" class="closing-button">
+            <button type="button" class="closing-button">
                 <svg class="closing-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
@@ -395,13 +396,12 @@
                     </div>
                  </div>
                  <div class="comment-block">
-                    <label for="user_comment" class="label">
+                    <label for="user-comment" class="label">
                         Comment
                     </label>
-                    <textarea id="user_comment" name="user_comment" placeholder="Text input" class="comment-input"></textarea>
+                    <textarea id="user-comment" name="user-comment" placeholder="Text input" class="comment-input"></textarea>
                  </div>
-            </form>
-            <div class="checkbox-cont">
+<div class="checkbox-cont">
                 <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="visually-hidden">
                 <label for="user-privacy" class="accept">
                   <span class="policy">
@@ -413,6 +413,8 @@
             </div>
             <button type="submit" class="button-send">Send
             </button>
+            </form>
+            
         </div>
     </div>
 </body>
