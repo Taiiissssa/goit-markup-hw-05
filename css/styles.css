@@ -816,10 +816,10 @@ input[type="checkbox"]:checked+.accept .policy .checkbox-icon {
 .button-send{
     display: block;
         min-width:169px ;
-        height: 32px;
+height: 56px;g
         color: var(--WHITE, #FFF);
             text-align: center;
-            font-family: Roboto;
+            font-family: 'Roboto', sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
