@@ -685,6 +685,9 @@ address {
 .closing-icon:focus{
     fill: #FFFFFF;
 }
+.closing-button:hover {
+    fill: #FFFFFF;
+}
 .closing-button:hover .closing-icon {
     fill: #ffffff;
 }
@@ -798,11 +801,11 @@ fill: transparent;
     color:#4D5AE5;
     text-decoration: underline;
 }
-.visually-hidden:checked + .policy{
+.visually-hidden:checked .policy{
     background-color:#404bbf;
     border: none;
     fill: #F4F4FD;
-}
+}g
 
 input[type="checkbox"]:checked+.accept .policy {
     background-color: var(--checkbox-bg);
