@@ -661,10 +661,9 @@ address {
         cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
-.closing-button:hover{
-    background-color: #404BBF;
+.closing-button:hover {
+    background-color: #404bbf;
     border: none;
-    fill: #ffffff
 }
 .closing-button:focus{
     background-color: #404BBF;
@@ -679,6 +678,9 @@ address {
 }
 .closing-icon:focus{
     fill: #FFFFFF;
+}
+.closing-button:hover .closing-icon {
+    fill: #ffffff;
 }
 .text-modal{
     color: #2E2F42;
@@ -864,10 +866,10 @@ padding-left: 16px;
         letter-spacing: 0.04em;
         cursor: pointer;
         align-items: center;
-            color:#FCFCFC;
+            color:#ffffff;
             gap: 16px;
             height:40px;
-            max-width: 165px;
+            min-width: 165px;
             border: none;
             
 
