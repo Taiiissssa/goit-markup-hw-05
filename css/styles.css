@@ -867,7 +867,7 @@ input#user-privacy:checked~.accept .policy .checkbox-icon {
 .button-send{
     display: block;
         min-width:169px ;
-height: 56px;g
+height: 56px;
         color: var(--WHITE, #FFF);
             text-align: center;
             font-family: 'Roboto', sans-serif;
