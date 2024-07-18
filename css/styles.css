@@ -644,52 +644,29 @@ address {
     padding: 72px 24px 24px 24px;
 }
 
-.closing-button{
-    display: flex;
+.close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #E7E9FC;
-    fill:#2E2F42;
+    display: flex;
+    fill: #2e2f42;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        padding: 0;
-        cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-}
-.closing-button:hover {
-    background-color: #404bbf;
-    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.closing-button:hover {
-    background-color: #404BBF;
-    border: none;
-    fill: #FFFFFF;
-}
-.closing-button:focus{
-    background-color: #404BBF;
-        border: none;
-        fill: #FFFFFF;
-}
-.closing-icon{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.closing-icon:hover {
-    fill: #FFFFFF;
-}
-.closing-icon:focus{
-    fill: #FFFFFF;
-}
-.closing-button:hover {
-    fill: #FFFFFF;
-}
-.closing-button:hover .closing-icon {
-    fill: #ffffff;
+.close-button:hover,
+.close-button:focus {
+    background-color: #404bbf;
+    border:none;
 }
 .text-modal{
     color: #2E2F42;
@@ -701,6 +678,11 @@ address {
         letter-spacing: 0.02em;
         text-align: center;
         margin-bottom: 16px;
+}
+#user-privacy:checked~label .policy {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 .form-div{
     margin-bottom: 8px;
