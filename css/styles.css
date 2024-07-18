@@ -831,9 +831,9 @@ fill: transparent;
     border: none;
 }
 
-.modal-close-btn:focus {
-    background-color: #404bbf;
-    border: none;
+.modal-close-btn:hover .closing-icon,
+.modal-close-btn:focus .closing-icon {
+    fill: #ffffff;
 }
 input[type="checkbox"]:checked+.accept .policy {
     background-color: var(--checkbox-bg);
@@ -844,6 +844,26 @@ input[type="checkbox"]:checked+.accept .policy {
 input[type="checkbox"]:checked+.accept .policy .checkbox-icon {
     fill: #F4F4FD;
 }
+
+
+input[type="checkbox"]:checked+.accept .policy {
+    background-color: var(--checkbox-bg);
+    /* Background color when checked */
+    border: none;
+    /* Remove border when checked */
+}
+
+input[type="checkbox"]:checked+.accept .policy .checkbox-icon {
+    fill: var(--icon-fill);
+    /* Icon fill color when checked */
+}
+
+/* Alternatively using a different selector */
+input#user-privacy:checked~.accept .policy .checkbox-icon {
+    fill: var(--icon-fill);
+    /* Icon fill color when checked */
+}
+
 .button-send{
     display: block;
         min-width:169px ;
